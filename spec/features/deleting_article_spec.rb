@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.feature "Deleting and Article" do
+RSpec.feature "Deleting an Article" do
   
     
   before do
