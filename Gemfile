@@ -6,7 +6,6 @@ gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
 gem 'bootstrap-sass', '~>3.3.4.1'
 gem 'autoprefixer-rails', '~>5.2.0'
-gem 'sqlite3'
 gem 'devise', '~>3.5.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -57,4 +56,7 @@ group :test do
   gem 'capybara', '2.4.4'
 end
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
